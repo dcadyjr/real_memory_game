@@ -27,9 +27,9 @@ var cardsInPlay = [];
 
 var checkForMatch = function (){   //tells user if they got a match
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-		alert("You found a match!");
+		$('#winModal').modal('show');
 	  } else {
-		alert("Sorry, try again.");
+		$("#loseModal").modal("show");
 	  }
 
 };
@@ -47,8 +47,8 @@ var flipCard = function () { //tells user card they flipped
     if (cardsInPlay.length === 2) 
 
 	checkForMatch();
-
 }; 
+
 //unit 11  adds cards to board
 var createBoard = function (){
 	for (var i = 0; i < cards.length; i++) {
@@ -58,11 +58,16 @@ var createBoard = function (){
 	cardElement.setAttribute("data-id", i);
 	cardElement.addEventListener("click", flipCard);
 	document.getElementById("game-board").appendChild(cardElement)
-
-
-
 	}
-
 };
 
+	//var boardReset = function () {
+		//if (i === card.length)
+		//createBoard ();
+	//};
+
+//reset.addEventListener ("click", boardReset);
+
 createBoard ();
+
+

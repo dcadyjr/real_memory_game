@@ -2,7 +2,9 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+	
 	<title>Memory Card Game</title>
 
 </head>
@@ -19,11 +21,34 @@
 		<h3>Stuck on a problem at work?  Give your brain a break and try this fun game!</h3>
 		<a href="https://www.linkedin.com/in/david-cady-4634137/">Check me out on linkedin.</a>
 		<p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards.</p>
+
+			<!-- reset button -->
+		<button id="reset">RESET</button>
+	
 	</main>		
+
+	<!--  win modal -->
+	<div id="winModal" class="modal">
+		<div class="win-content">
+			<span class="close">&times;</span>
+			<p> You win!</p>
+		</div>
+	</div>
+
+	<!-- lose modal-->
+	
+	<div id="loseModal" class="modal">
+		<div class="lose-content">
+			<span class="close">&times;</span>
+			<p>Try again</p>
+		</div>	
+	</div> 
 	
 	<div id="game-board" class="board clearfix"></div>
 		
 	<script src="js/main.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 	<footer class="clearfix">
 	 	<p class="copyright">Copyright 2017</p>
