@@ -2,8 +2,8 @@
 <html>
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
 	
 	<title>Memory Card Game</title>
 
@@ -25,24 +25,40 @@
 			<!-- reset button -->
 		<button id="reset">RESET</button>
 	
-	</main>		
+	</main>	
 
 	<!--  win modal -->
-	<div id="winModal" class="modal">
-		<div class="win-content">
-			<span class="close">&times;</span>
-			<p> You win!</p>
+	<div class="container">
+     	<div class="modal fade" id="winModal" role="dialog">
+    		<div class="modal-dialog">
+      	  		<div class="win-content">
+         				<div class="modal-body">
+         					<button type="button" class="close" data-dismiss="modal">&times;</button>
+          					<p>You Win!</p>
+        				</div>
+      				</div>      
+    			</div>
+  			</div>
 		</div>
-	</div>
-
+	</div>	
 	<!-- lose modal-->
 	
-	<div id="loseModal" class="modal">
-		<div class="lose-content">
-			<span class="close">&times;</span>
-			<p>Try again</p>
-		</div>	
-	</div> 
+	<div class="container">
+     	<div class="modal fade" id="loseModal" role="dialog">
+    		<div class="modal-dialog">
+      	  		<div class="lose-content">
+
+         				<div class="modal-body">
+          					<button type="button" class="close" data-dismiss="modal">&times;</button>
+          					<p>Try again</p>
+          					
+        				</div>
+        					
+      				</div>      
+    			</div>
+  			</div>
+		</div>
+	</div>
 	
 	<div id="game-board" class="board clearfix"></div>
 		

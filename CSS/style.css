@@ -103,41 +103,46 @@ p {
 
 /*Modals*/
 
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
+.container {
+	font-family: "Raleway", sans-serif;
+	z-index: 0;
 	padding-top: 10px;
 	left: 0;
 	top: 0;
-	width: 25%;
-	height: 25%;
 	overflow: auto;
-	background-color: rgb(255, 0, 0);
 	background-color: rgb(0, 0, 0, 0.9);
-
 }
 
+.modal-body {
+	font-family: "Raleway", sans-serif;
+	color: white;
+	text-align: center;
+	background-color: #00A6B3;
+	border-radius: 30px;
+	width: 50%;
+
+}
 .win-content {
-	background-color: #fefefe;
+	background-color: #F15B31;
 	margin: 15% auto;
 	padding: 20px;
 	border: 1px solid #888;
+	border-radius: 30px;
 	width: 80%;
 } 
 
 .lose-content {
-	background-color: #fefefe;
+	background-color: #F15B31;
 	margin: 15% auto;
 	padding: 20px;
 	border: 1px solid #888;
+	border-radius: 30px;
 	width: 80%;
 } 
 
 .close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
+	color: black;
+	font-size: 40px;
 	font-weight: bold;
 
 }
